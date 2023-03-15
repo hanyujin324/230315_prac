@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연습</title>
+  <script src="./randomContainer2.js" defer></script>
+  <script src="./mainContainer.js" defer></script>
+  <style>
+    #result{
+      height: 50px;
+      width: 50px;
+    }
+  </style>
+  
+</head>
+<body>
+  <div id="root">
+    <div id="randomContainer">
+      <form id = "form">
+        <input type="text" id="search" name="search" placeholder="입력입력">
+       <input type="submit" id ="submit" value="검색검색">
+     </form>
+     <p id="result"></p>
+    </div>
+    <div id="mainContainer"></div>
+  </div>
+<!--   <script>
+    const _URLa = `https://pokeapi.co/api/v2/pokemon-species/${abc}/`;
+    const xhrc = new XMLHttpRequest();
+
+    function searchV(){
+      const _PokeDataa = JSON.parse(xhrc.response);
+      console.dir(_PokeDataa.name);
+      const abc=document.getElementById('search').value; //abc는 검색할때 입력하는 것
+      xhrc.open('GET', _URLa);
+      xhrc.send();
+
+      if(abc==_PokeDataa.name){
+        document.getElementById('result').innerHTML="abc"
+      }
+
+      if(abc==_PokeDataa.name){ //만약 검색한 것과 이름이 일치한다면
+          document.getElementById('result').innerText==abc;
+        }
+        // document.getElementById('result').innerText = abc;
+      }
+  </script> -->
+</body>
+</html>
